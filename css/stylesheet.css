@@ -1,0 +1,49 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+.main {
+	height: 100vh;
+	width: 100%;
+}
+.first {
+	background-image: url("../bilder/makeIT_stor.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+.banner {
+	height: 25vh;
+	width: 100%;
+
+	/* Text inuti bannern */
+	font-size: 8em;
+	color: white;
+	text-align: center;
+	line-height: 25vh;
+}
+.second .banner {
+	background-color: #ca537e;
+}
+.third .banner {
+	background-color: #91b943;
+}
+.fourth .banner {
+	background-color: #dd7911;
+}
+.fifth .banner {
+	background-color: #766ea8;
+}
+.sixth .banner {
+	background-color: #ca537e;
+}
+main:not(first-child) {
+	border: 1px solid black;
+}
+.sec-content {
+	width: 66%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
