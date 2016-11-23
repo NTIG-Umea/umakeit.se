@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+	display: none;
+}
 body,
 html {
 	margin: 0;
@@ -6,15 +9,56 @@ html {
 .main {
 	height: 100vh;
 	width: 100%;
+	z-index: -1;
+}
+.nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin-top: -2px;
+}
+.arrow {
+	background-color: red;
+	height: 75px;
+	width: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -37px;
+	border-radius: 100%;
+}
+.sec-arrow {
+	background-color: #91b943;
+}
+.third-arrow {
+	background-color: #dd7911;
+}
+.fourth-arrow {
+	background-color: #766ea8;
 }
 .first {
-	background-image: url("../bilder/makeIT_stor.png");
+	background-image: url("../bilder/Make_IT.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
 }
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 66%;
+	height: 100%;
+	border: 1px solid #F0F0F0;
+	border-top: 0;
+	border-bottom: 0;
+}
 .banner {
-	height: 25vh;
+	height: 100vh;
 	width: 100%;
 
 	/* Text inuti bannern */
@@ -44,6 +88,4 @@ main:not(first-child) {
 .sec-content {
 	width: 66%;
 	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
 }

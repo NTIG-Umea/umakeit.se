@@ -1,0 +1,16 @@
+RewriteBase /
+RewriteEngine  on
+
+ErrorDocument 404 /404.html
+
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [QSA,L]
+
+# Force the domain to load with the www subdomain prefix
+# If the request doesn't start with www...
+RewriteCond %{HTTP_HOST}   !^www\.umakeit.se [NC]
+# And the site name isn't empty
+RewriteCond %{HTTP_HOST}   !^$
+# Finally rewrite the request: end of rules, don't escape the output, and force a 301 redirect
+RewriteRule ^/?(.*) http://www.umakeit.se/$1 [L,R,NE]
