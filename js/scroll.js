@@ -13,7 +13,7 @@ $(document).ready(function() {
 	function scrollToAnchor(aid){
 		$('html, body').animate({
 			scrollTop: aid.offset().top
-		},1500);
+		}, 1500);
 	}
 
 	var i = 1;
@@ -27,17 +27,4 @@ $(document).ready(function() {
 				scrollToAnchor($('#section'+i+''));
 			}
 		});
-
-/*	// Fixed header after scroll
-   $(document).scroll(function() {
-      var nav = $("#nav"),
-            height = $(window).scrollTop();
-      if(height >= ) {
-         nav.addClass('fixed');
-      }else {
-         nav.removeClass('fixed');
-      }
-   });
-   // End of fixed header
-*/
 });

@@ -1,6 +1,3 @@
-::-webkit-scrollbar {
-	display: none;
-}
 body,
 html {
 	margin: 0;
@@ -11,27 +8,54 @@ html {
 	width: 100%;
 	z-index: -1;
 }
-.nav {
-	margin-left: auto;
-	margin-right: auto;
+main > a{
+	text-decoration: none;
+	color: black;
 }
-.navbar {
-	margin-bottom: 0;
+.nav {
+	height: 12%;
+	width: 100%;
+}
+.navul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.navli {
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+.s2,
+.s6 {
+	background-color: #ca537e;
+}
+.s3 {
+	background-color: #91b943;
+}
+.s4 {
+	background-color: #dd7911;
+}
+.s5 {
+	background-color: #766ea8;
 }
 .fixed {
-	position: fixed;
 	top: 0;
 	width: 100%;
+	height: 20px;
 	margin-top: -2px;
 }
 .arrow {
-	background-color: red;
 	height: 75px;
 	width: 75px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 	margin-top: -37px;
 	border-radius: 100%;
+}
+.glyphicon-chevron-down:before {
+		font-size: 2em;
 }
 .sec-arrow {
 	background-color: #91b943;
