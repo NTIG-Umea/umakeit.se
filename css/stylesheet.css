@@ -1,3 +1,23 @@
+
+@media (max-width: 749px) {
+    .banner {	font-size: 3em;	}
+}
+
+@media (min-width: 750px) {
+    .banner {font-size: 4em;}
+}
+
+@media (min-width: 970px) {
+    .banner {font-size: 5em;}
+}
+
+@media (min-width: 1170px) {
+    .banner {font-size: 8em;}
+}
+
+
+
+
 body,
 html {
 	margin: 0;
@@ -9,21 +29,27 @@ h1, h2, h3, h4 {
 	font-family: 'Dosis', sans-serif;
 }
 
-.main {
+section, header, footer {
 	min-height: 100%;
 	width: 100%;
 	padding-bottom: 45px;
 }
-main > a{
+
+
+a {
 	text-decoration: none;
-	color: black;
+  color:#ffffff;
 }
+
+
 .nav {
 	position: fixed;
 	display: block;
 	height: 12%;
 	width: 100%;
 	z-index: 100;
+	margin:0;
+  transition: height 1s;
 }
 
 .navul {
@@ -37,30 +63,10 @@ main > a{
 	height: 100%;
 }
 
+.small_nav {
+	height:6%;
+}
 
-
-
-.s2,
-.s6,
-.fifth-arrow,
-.first-arrow {
-	background-color: #ca537e;
-}
-.s3,
-.second-arrow {
-	background-color: #91b943;
-}
-.s4,
-.third-arrow {
-	background-color: #dd7911;
-}
-.s5,
-.fourth-arrow {
-	background-color: #766ea8;
-}
-.fifth-arrow {
-	background-color: #ca537e;
-}
 
 .arrow {
 	height: 75px;
@@ -77,7 +83,8 @@ main > a{
 		font-size: 2em;
 		color: #ffffff;
 }
-.first {
+
+.logo {
 	background-image: url("../bilder/Make_IT.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -90,6 +97,7 @@ main > a{
 	width: 66%;
 	color:#ffffff;
 	text-align: justify;
+	font-size: 1.3em;
 }
 .banner {
 
@@ -97,24 +105,26 @@ main > a{
 	margin:0;
 
 	/* Text inuti bannern */
-	font-size: 8em;
+
 	color: white;
 	text-align: center;
 }
-.second {
+
+.white {
+	background-color: #ffffff;
+}
+
+.pink {
 	background-color: #ca537e;
 }
-.third {
+.green {
 	background-color: #91b943;
 }
-.fourth  {
+.orange  {
 	background-color: #dd7911;
 }
-.fifth  {
+.blue  {
 	background-color: #766ea8;
-}
-.sixth {
-	background-color: #ca537e;
 }
 
 .up-circle {
