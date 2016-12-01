@@ -63,26 +63,6 @@ a {
 	height: 100%;
 }
 
-.small_nav {
-	height:6%;
-}
-
-
-.arrow {
-	height: 75px;
-	width: 75px;
-
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	top: -35px;
-	border-radius: 100%;
-	position: relative;
-}
-.glyphicon-chevron-down:before {
-		font-size: 2em;
-		color: #ffffff;
-}
 
 .logo {
 	background-image: url("../bilder/Make_IT.png");
@@ -99,6 +79,18 @@ a {
 	text-align: justify;
 	font-size: 1.3em;
 }
+
+.left-column {
+  width:50%;
+}
+
+.right-column {
+  float:right;
+  width:50%;
+}
+
+
+
 .banner {
 
 	width: 100%;
@@ -112,24 +104,46 @@ a {
 
 .white {
 	background-color: #ffffff;
+  color:#111111;
 }
 
 .pink {
 	background-color: #ca537e;
+  color:#ffffff;
 }
 .green {
 	background-color: #91b943;
+  color:#ffffff;
 }
 .orange  {
 	background-color: #dd7911;
+  color:#ffffff;
 }
 .blue  {
 	background-color: #766ea8;
+  color:#ffffff;
 }
 
-.up-circle {
+.down-arrow {
+	height: 75px;
+	width: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	top: -35px;
+	border-radius: 100%;
+	position: relative;
+  padding-top:5px;
+}
+
+
+.glyphicon-chevron-down:before {
+		font-size: 2em;
+}
+
+#up-arrow {
 	position: fixed;
-	bottom: 50px;
+	bottom: -60px;
 	right: 50px;
 	height: 80px;
 	width: 80px;
@@ -137,11 +151,12 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  transition: bottom 1s, color 1s;
+  font-size: 3em;
+  color: #ffffff;
 }
-.up-arrow {
-	margin-top: -10px;
-}
-.glyphicon-chevron-up:before {
-		font-size: 3em;
-		color: red;
+
+
+#nti-logo {
+  width:60%;
 }
