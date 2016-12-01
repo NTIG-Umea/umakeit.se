@@ -31,12 +31,12 @@ $(document).ready(function() {
 		// Smooth header transition
 		$(document).scroll(function() {
 			var nav = $('#nav'),
-					height = $(window).scrollTop(),
-					max = $('#section2').height() -10;
+			height = $(window).scrollTop(),
+			max = $('#section2').height() -10;
 				if (height <= max) {
-					nav.removeClass('temp');
+					nav.css('height', '12%');
 				} else {
-					nav.addClass('temp');
+					nav.css('height', '6%');
 				}
 		});
 
