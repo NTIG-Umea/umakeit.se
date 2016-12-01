@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$('html, body').animate({
 			scrollTop: aid.offset().top
 		}, 1500);
-	}
+	};
 
 	var i = 1;
 		$(document).keydown(function (event) {
@@ -27,4 +27,17 @@ $(document).ready(function() {
 				scrollToAnchor($('#section'+i+''));
 			}
 		});
+
+		// Smooth header transition
+		$(document).scroll(function() {
+			var nav = $('#nav'),
+					height = $(window).scrollTop(),
+					max = $('#section2').height() -10;
+				if (height <= max) {
+					nav.removeClass('temp');
+				} else {
+					nav.addClass('temp');
+				}
+		});
+
 });

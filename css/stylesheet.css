@@ -13,8 +13,13 @@ main > a{
 	color: black;
 }
 .nav {
+	position: fixed;
+	display: block;
 	height: 12%;
 	width: 100%;
+}
+.temp {
+	height: 5%;
 }
 .navul {
 	list-style-type: none;
@@ -27,17 +32,24 @@ main > a{
 	height: 100%;
 }
 .s2,
-.s6 {
+.s6,
+.fifth-arrow {
 	background-color: #ca537e;
 }
-.s3 {
+.s3,
+.sec-arrow {
 	background-color: #91b943;
 }
-.s4 {
+.s4,
+.third-arrow {
 	background-color: #dd7911;
 }
-.s5 {
+.s5,
+.fourth-arrow {
 	background-color: #766ea8;
+}
+.fifth-arrow {
+	background-color: #ca537e;
 }
 .fixed {
 	top: 0;
@@ -56,15 +68,7 @@ main > a{
 }
 .glyphicon-chevron-down:before {
 		font-size: 2em;
-}
-.sec-arrow {
-	background-color: #91b943;
-}
-.third-arrow {
-	background-color: #dd7911;
-}
-.fourth-arrow {
-	background-color: #766ea8;
+		color: #212121;
 }
 .first {
 	background-image: url("../bilder/Make_IT.png");
@@ -76,7 +80,6 @@ main > a{
 	margin-left: auto;
 	margin-right: auto;
 	width: 66%;
-	height: 100%;
 	border: 1px solid #F0F0F0;
 	border-top: 0;
 	border-bottom: 0;
@@ -106,10 +109,25 @@ main > a{
 .sixth .banner {
 	background-color: #ca537e;
 }
-main:not(first-child) {
-	border: 1px solid black;
-}
 .sec-content {
 	width: 66%;
 	height: 100%;
+}
+.up-circle {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	height: 80px;
+	width: 80px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.up-arrow {
+	margin-top: -10px;
+}
+.glyphicon-chevron-up:before {
+		font-size: 3em;
+		color: red;
 }
