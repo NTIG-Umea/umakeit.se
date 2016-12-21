@@ -8,9 +8,9 @@
       width: 90%;
     }
 
-    .youtube {
+    iframe.youtube {
       height: 75vw;
-      width: 100vw;
+      width: 100%;
     }
 }
 
@@ -23,9 +23,9 @@
       width: 60%;
     }
 
-    .youtube {
+    iframe.youtube {
       height:40vw;
-      width: 60vw;
+      width: 100%;
     }
 }
 
@@ -35,9 +35,16 @@
 
 @media (min-width: 1170px) {
     .banner {font-size: 8em;}
-    .youtube {
-      height:30vw;
-      width: 40vw;
+    iframe.youtube {
+      flex
+      height:20vw;
+      width: 33%;
+    }
+    div.youtube {
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+
     }
 }
 
@@ -58,7 +65,7 @@ h1, h2, h3, h4 {
 section, header, footer {
 	min-height: 100%;
 	width: 100%;
-	padding-bottom: 45px;
+	padding-bottom: 65px;
 }
 
 
