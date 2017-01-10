@@ -36,15 +36,14 @@
 @media (min-width: 1170px) {
     .banner {font-size: 8em;}
     iframe.youtube {
-      flex
       height:20vw;
-      width: 33%;
+      width: 50%;
     }
     div.youtube {
       display: flex;
       display: -webkit-flex;
       justify-content: center;
-
+      flex-wrap: wrap;
     }
 }
 
